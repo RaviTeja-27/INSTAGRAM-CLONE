@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 // Middleware to parse URL-encoded and JSON bodies
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+  
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, "public")));
 
